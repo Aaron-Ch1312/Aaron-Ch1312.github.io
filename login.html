@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js" defer></script>
+</head>
+
+<body>
+    <main class="login-page w-full flex justify-center px-4">
+        <section class="login-card grid grid-cols-1 md:grid-cols-[1.05fr_0.95fr] w-full max-w-[980px]">
+            <a class="login-back" href="index.html">Regresar</a>
+
+            <div class="login-hero">
+                <span class="login-kicker">Casa de Cambio Aldito</span>
+                <h1>Inicia sesión</h1>
+                <p>Accede a tu cuenta para continuar con tus operaciones de cambio de forma rápida y segura.</p>
+            </div>
+
+            <form class="login-form" id="login-form">
+                <label for="correo">CORREO</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" autocomplete="email"
+                    required>
+
+                <label for="contrasena">CONTRASEÑA</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña"
+                    autocomplete="current-password" required>
+
+                <div class="login-options">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <div class="form-message" id="login-message" aria-live="polite"></div>
+
+                <button type="submit" class="btn-login-submit">INGRESAR</button>
+            </form>
+        </section>
+    </main>
+
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar a modo claro" aria-pressed="true">
+        Modo claro
+    </button>
+</body>
+
+</html>

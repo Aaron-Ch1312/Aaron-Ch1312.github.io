@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/register.css">
+    <title>Registro</title>
+    <script src="js/register.js" defer></script>
+</head>
+
+<body>
+    <main class="register-page w-full flex justify-center px-4">
+        <section class="register-card grid grid-cols-1 md:grid-cols-[1.05fr_0.95fr] w-full max-w-[980px]">
+            <a class="register-back" href="index.html">Regresar</a>
+
+            <div class="register-hero">
+                <span class="register-kicker">Casa de Cambio Aldito</span>
+                <h1>Regístrate</h1>
+                <p>Crea tu cuenta para comenzar a cambiar dólares y soles con una experiencia rápida, segura y clara.
+                </p>
+            </div>
+
+            <form action="#" method="post" class="register-form" id="form-registro">
+                <label for="nombre">NOMBRE</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresar Nombre" autocomplete="given-name">
+
+                <label for="apellidos">APELLIDOS</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Ingresar Apellidos"
+                    autocomplete="family-name">
+
+                <label for="correo">CORREO</label>
+                <input type="email" name="correo" id="correo" placeholder="Ingresar Correo" autocomplete="email">
+
+                <label for="contraseña">CONTRASEÑA</label>
+                <input type="password" name="contraseña" id="contraseña" placeholder="**********"
+                    autocomplete="new-password">
+
+                <label for="confirmar-contrasena">CONFIRMAR CONTRASEÑA</label>
+                <input type="password" name="confirmar-contrasena" id="confirmar-contrasena" placeholder="**********"
+                    autocomplete="new-password">
+
+                <div class="acciones-registro">
+                    <button class="btn-registrar" type="submit">
+                        REGISTRAR
+                    </button>
+                </div>
+
+                <div class="form-message" id="register-message" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar a modo claro" aria-pressed="true">
+        Modo claro
+    </button>
+</body>
+
+</html>
