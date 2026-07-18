@@ -270,10 +270,10 @@ document.addEventListener('DOMContentLoaded', function () {
         btnIniciaOperacion.addEventListener('click', function () {
             const isSessionActive = sessionStorage.getItem('usuarioRegistrado') === 'true';
             if (!isSessionActive) {
-                window.location.href = 'login.html?return=operacion.html';
+                window.location.href = 'login.html?return=#';
                 return;
             }
-            window.location.href = 'operacion.html';
+            window.location.href = '#';
         });
     }
 
